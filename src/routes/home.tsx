@@ -1,10 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -15,8 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import {
   Eye,
-  HardHat,
-  Zap,
+  CircleGauge,
   Shield,
   ArrowRight,
   CheckCircle,
@@ -26,13 +20,14 @@ import {
   Pill,
   Plane,
   Monitor,
-  Workflow,
   Cpu,
   Thermometer,
   Settings,
   PillBottle,
   Shirt,
   Webcam,
+  Network,
+  HandCoins,
   Factory,
   PackageCheck,
 } from "lucide-react";
@@ -94,8 +89,12 @@ export default function Home() {
                       <Camera className="h-4 w-4 text-secondary" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-bold">Desktop Vision System</h3>
-                      <p className="text-xs text-muted-foreground">Precision inspection system</p>
+                      <h3 className="text-sm font-bold">
+                        Desktop Vision System
+                      </h3>
+                      <p className="text-xs text-muted-foreground">
+                        Precision inspection system
+                      </p>
                     </div>
                   </div>
                   <img
@@ -110,8 +109,12 @@ export default function Home() {
                       <Brain className="h-4 w-4 text-secondary" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-bold">Industrial Compute Unit</h3>
-                      <p className="text-xs text-muted-foreground">Rugged edge AI processing</p>
+                      <h3 className="text-sm font-bold">
+                        Industrial Compute Unit
+                      </h3>
+                      <p className="text-xs text-muted-foreground">
+                        Rugged edge AI processing
+                      </p>
                     </div>
                   </div>
                   <img
@@ -121,498 +124,499 @@ export default function Home() {
                   />
                 </div>
               </div>
-              
+
               {/* Desktop: Animated Cards */}
               <div className="hidden lg:block relative w-full lg:h-[480px] xl:h-[580px] items-center justify-center overflow-visible px-8 lg:px-12 xl:px-16">
-              {/* Desktop Product Cards */}
-              <div className="relative flex items-center justify-center scale-75 lg:scale-90 xl:scale-100 w-full">
-                {/* Desktop Vision System (edge_1) - Left Card */}
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <div className="relative group cursor-pointer">
-                      <div
-                        className="relative bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-lg rounded-3xl p-6 md:p-7 border border-secondary/30 shadow-md shadow-black transition-all duration-700 ease-out
+                {/* Desktop Product Cards */}
+                <div className="relative flex items-center justify-center scale-75 lg:scale-90 xl:scale-100 w-full">
+                  {/* Desktop Vision System (edge_1) - Left Card */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="relative group cursor-pointer">
+                        <div
+                          className="relative bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-lg rounded-3xl p-6 md:p-7 border border-secondary/30 shadow-md shadow-black transition-all duration-700 ease-out
                         transform -rotate-6 lg:-rotate-12 hover:rotate-0 hover:scale-105 hover:z-50 hover:-translate-y-4 lg:hover:-translate-y-8 hover:shadow-secondary/20 hover:border-secondary/50
                         w-64 sm:w-72 md:w-80 h-72 sm:h-80 md:h-96"
-                      >
-                        <div className="text-center mb-3">
-                          <div className="inline-flex items-center gap-2 bg-accent text-secondary px-3 py-1.5 rounded-full text-sm font-medium">
-                            <Camera className="h-4 w-4" />
-                            Vision System
+                        >
+                          <div className="text-center mb-3">
+                            <div className="inline-flex items-center gap-2 bg-accent text-secondary px-3 py-1.5 rounded-full text-sm font-medium">
+                              <Camera className="h-4 w-4" />
+                              Vision System
+                            </div>
                           </div>
-                        </div>
-                        <img
-                          src="/edge_1.png"
-                          alt="Desktop Visual Inspection System - AI Vision Camera on Adjustable Mount"
-                          className="w-full h-36 md:h-48 object-contain group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="text-center mt-3 space-y-2">
-                          <h3 className="font-bold text-base sm:text-lg md:text-xl">
-                            Desktop Vision System
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed px-2">
-                            Precision inspection with adjustable camera mount
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-7xl max-h-[85vh] overflow-y-auto">
-                    <DialogHeader className="space-y-2 pb-4 border-b">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
-                          <Camera className="h-4 w-4 text-secondary" />
-                        </div>
-                        <div className="text-left">
-                          <DialogTitle className="text-lg font-bold text-foreground">
-                            Desktop Vision System
-                          </DialogTitle>
-                          <DialogDescription className="text-sm text-muted-foreground">
-                            Self-contained AI vision system for precision
-                            industrial inspection and quality control
-                          </DialogDescription>
-                        </div>
-                      </div>
-                    </DialogHeader>
-
-                    <div className="space-y-5 py-4">
-                      {/* Key Stats */}
-                      <div className="grid grid-cols-2 xs:grid-cols-4 gap-2 sm:gap-3">
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            13
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            TOPS AI Power
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            12MP
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            Resolution
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            8GB
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            RAM
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            2032
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            Support Until
+                          <img
+                            src="/edge_1.png"
+                            alt="Desktop Visual Inspection System - AI Vision Camera on Adjustable Mount"
+                            className="w-full h-36 md:h-48 object-contain group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="text-center mt-3 space-y-2">
+                            <h3 className="font-bold text-base sm:text-lg md:text-xl">
+                              Desktop Vision System
+                            </h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed px-2">
+                              Precision inspection with adjustable camera mount
+                            </p>
                           </div>
                         </div>
                       </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-7xl max-h-[85vh] overflow-y-auto">
+                      <DialogHeader className="space-y-2 pb-4 border-b">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                            <Camera className="h-4 w-4 text-secondary" />
+                          </div>
+                          <div className="text-left">
+                            <DialogTitle className="text-lg font-bold text-foreground">
+                              Desktop Vision System
+                            </DialogTitle>
+                            <DialogDescription className="text-sm text-muted-foreground">
+                              Self-contained AI vision system for precision
+                              industrial inspection and quality control
+                            </DialogDescription>
+                          </div>
+                        </div>
+                      </DialogHeader>
 
-                      {/* Two Column Layout for Specs and Features */}
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
-                        {/* Technical Specifications */}
-                        <div>
-                          <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <Settings className="h-4 w-4 text-secondary" />
-                            Technical Specifications
-                          </h3>
-                          <div className="flex flex-col gap-2">
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Brain className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    AI Processing Power
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    Hailo-8L Neural Accelerator
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    13 trillion operations per second (TOPS) for
-                                    real-time AI inference
-                                  </p>
-                                </div>
-                              </div>
+                      <div className="space-y-5 py-4">
+                        {/* Key Stats */}
+                        <div className="grid grid-cols-2 xs:grid-cols-4 gap-2 sm:gap-3">
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              13
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Camera className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Advanced Camera System
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    C-Mount adapter with 12MP progressive scan
-                                    sensor
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    CSI2-MIPI or USB 3.1 interface • Optional
-                                    1080p global shutter module
-                                  </p>
-                                </div>
-                              </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              TOPS AI Power
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Cpu className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Compute Platform
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    Raspberry Pi 5 with 8GB RAM
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    Quad-core 2.4GHz • 64-bit ARM architecture •
-                                    Expandable SSD support
-                                  </p>
-                                </div>
-                              </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              12MP
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Monitor className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Compact Design
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    200mm × 105mm × 100mm form factor
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    Ball head mountable • Self-contained
-                                    all-in-one package
-                                  </p>
-                                </div>
-                              </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              Resolution
+                            </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              8GB
+                            </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              RAM
+                            </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              2032
+                            </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              Support Until
                             </div>
                           </div>
                         </div>
 
-                        {/* Key Features */}
-                        <div>
-                          <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <CheckCircle className="h-4 w-4 text-secondary" />
-                            Key Features & Benefits
-                          </h3>
-                          <div className="grid gap-2">
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                        {/* Two Column Layout for Specs and Features */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+                          {/* Technical Specifications */}
+                          <div>
+                            <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
+                              <Settings className="h-4 w-4 text-secondary" />
+                              Technical Specifications
+                            </h3>
+                            <div className="flex flex-col gap-2">
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Brain className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      AI Processing Power
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      Hailo-8L Neural Accelerator
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      13 trillion operations per second (TOPS)
+                                      for real-time AI inference
+                                    </p>
+                                  </div>
                                 </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Self-contained compute and camera in a
-                                    single package
-                                  </span>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Camera className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Advanced Camera System
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      C-Mount adapter with 12MP progressive scan
+                                      sensor
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      CSI2-MIPI or USB 3.1 interface • Optional
+                                      1080p global shutter module
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Cpu className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Compute Platform
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      Raspberry Pi 5 with 8GB RAM
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      Quad-core 2.4GHz • 64-bit ARM architecture
+                                      • Expandable SSD support
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Monitor className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Compact Design
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      200mm × 105mm × 100mm form factor
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      Ball head mountable • Self-contained
+                                      all-in-one package
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Ubuntu-based with OpenCV, TensorFlow, and
-                                    ONNX framework support
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Customizable Qt-based user interface
-                                  </span>
+                          </div>
+
+                          {/* Key Features */}
+                          <div>
+                            <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-secondary" />
+                              Key Features & Benefits
+                            </h3>
+                            <div className="grid gap-2">
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Self-contained compute and camera in a
+                                      single package
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Ubuntu-based with OpenCV, TensorFlow, and
+                                      ONNX framework support
+                                    </span>
+                                  </div>
                                 </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Long-term support with parts availability
-                                    guaranteed until 2032
-                                  </span>
+                              </div>
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Customizable Qt-based user interface
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Long-term support with parts availability
+                                      guaranteed until 2032
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                    </DialogContent>
+                  </Dialog>
 
-                {/* Industrial Compute Unit (edge_2) - Right Card */}
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <div className="relative group -ml-8 lg:-ml-12 xl:-ml-16 cursor-pointer">
-                      <div
-                        className="relative bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-lg rounded-3xl p-6 md:p-7 border border-secondary/30 shadow-lg shadow-black transition-all duration-700 ease-out
+                  {/* Industrial Compute Unit (edge_2) - Right Card */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="relative group -ml-8 lg:-ml-12 xl:-ml-16 cursor-pointer">
+                        <div
+                          className="relative bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-lg rounded-3xl p-6 md:p-7 border border-secondary/30 shadow-lg shadow-black transition-all duration-700 ease-out
                         transform rotate-6 lg:rotate-12 hover:rotate-0 hover:scale-105 hover:z-50 hover:-translate-y-4 lg:hover:-translate-y-8 hover:shadow-secondary/20 hover:border-secondary/50
                         w-64 sm:w-72 md:w-80 h-72 sm:h-80 md:h-96"
-                      >
-                        <div className="text-center mb-3">
-                          <div className="inline-flex items-center gap-2 bg-accent text-secondary px-3 py-1.5 rounded-full text-sm font-medium">
-                            <Brain className="h-4 w-4" />
-                            Edge AI Compute
+                        >
+                          <div className="text-center mb-3">
+                            <div className="inline-flex items-center gap-2 bg-accent text-secondary px-3 py-1.5 rounded-full text-sm font-medium">
+                              <Brain className="h-4 w-4" />
+                              Edge AI Compute
+                            </div>
                           </div>
-                        </div>
-                        <img
-                          src="/edge_2.png"
-                          alt="Industrial Compute Unit - Edge AI Processing Hardware"
-                          className="w-full h-36 md:h-48 object-contain group-hover:scale-105 transition-transform duration-500"
-                        />
+                          <img
+                            src="/edge_2.png"
+                            alt="Industrial Compute Unit - Edge AI Processing Hardware"
+                            className="w-full h-36 md:h-48 object-contain group-hover:scale-105 transition-transform duration-500"
+                          />
 
-                        <div className="text-center mt-3 space-y-2">
-                          <h3 className="font-bold text-base sm:text-lg md:text-xl">
-                            Industrial Compute Unit
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed px-2">
-                            Rugged edge AI processing for harsh environments
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-7xl max-h-[85vh] overflow-y-auto">
-                    <DialogHeader className="space-y-2 pb-4 border-b">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
-                          <Brain className="h-4 w-4 text-secondary" />
-                        </div>
-                        <div className="text-left">
-                          <DialogTitle className="text-lg font-bold text-foreground">
-                            Industrial Compute Unit
-                          </DialogTitle>
-                          <DialogDescription className="text-sm text-muted-foreground">
-                            Ruggedized edge AI processing system for harsh
-                            industrial environments
-                          </DialogDescription>
-                        </div>
-                      </div>
-                    </DialogHeader>
-
-                    <div className="space-y-5 py-4">
-                      {/* Key Stats */}
-                      <div className="grid grid-cols-2 xs:grid-cols-4 gap-2 sm:gap-3">
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            13
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            TOPS AI Power
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            8GB
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            RAM
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            10°C
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            Below Max Temp
-                          </div>
-                        </div>
-                        <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
-                          <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
-                            2032
-                          </div>
-                          <div className="text-xs font-medium text-muted-foreground">
-                            Support Until
+                          <div className="text-center mt-3 space-y-2">
+                            <h3 className="font-bold text-base sm:text-lg md:text-xl">
+                              Industrial Compute Unit
+                            </h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed px-2">
+                              Rugged edge AI processing for harsh environments
+                            </p>
                           </div>
                         </div>
                       </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-7xl max-h-[85vh] overflow-y-auto">
+                      <DialogHeader className="space-y-2 pb-4 border-b">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                            <Brain className="h-4 w-4 text-secondary" />
+                          </div>
+                          <div className="text-left">
+                            <DialogTitle className="text-lg font-bold text-foreground">
+                              Industrial Compute Unit
+                            </DialogTitle>
+                            <DialogDescription className="text-sm text-muted-foreground">
+                              Ruggedized edge AI processing system for harsh
+                              industrial environments
+                            </DialogDescription>
+                          </div>
+                        </div>
+                      </DialogHeader>
 
-                      {/* Two Column Layout for Specs and Features */}
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
-                        {/* Technical Specifications */}
-                        <div>
-                          <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <Settings className="h-4 w-4 text-secondary" />
-                            Technical Specifications
-                          </h3>
-                          <div className="flex flex-col gap-2">
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Brain className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    AI Processing Power
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    Hailo-8L Neural Accelerator
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    13 trillion operations per second (TOPS) for
-                                    real-time AI inference
-                                  </p>
-                                </div>
-                              </div>
+                      <div className="space-y-5 py-4">
+                        {/* Key Stats */}
+                        <div className="grid grid-cols-2 xs:grid-cols-4 gap-2 sm:gap-3">
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              13
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Cpu className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Industrial Compute Module
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    Raspberry Pi 5 Industrial CM5, 8GB RAM
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    Quad-core 2.4GHz • 64-bit ARM • Expandable
-                                    SSD support
-                                  </p>
-                                </div>
-                              </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              TOPS AI Power
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Thermometer className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Advanced Thermal Management
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    Fanless aluminum enclosure
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    Self-dissipating heat management • Maintains
-                                    10°C below maximum temperature at full load
-                                  </p>
-                                </div>
-                              </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              8GB
                             </div>
-
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-start gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <Camera className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex flex-col justify-between h-full min-h-0">
-                                  <h4 className="text-xs sm:text-sm font-bold leading-tight">
-                                    Camera & Connectivity
-                                  </h4>
-                                  <p className="text-xs text-muted-foreground leading-tight">
-                                    CSI2-MIPI/USB 3.1 interfaces
-                                  </p>
-                                  <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
-                                    CSI2 to HDMI converter • WiFi 802.11ac •
-                                    Gigabit Ethernet
-                                  </p>
-                                </div>
-                              </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              RAM
+                            </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              10°C
+                            </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              Below Max Temp
+                            </div>
+                          </div>
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-2 sm:p-3 text-center">
+                            <div className="text-base sm:text-lg font-bold text-secondary mb-0.5">
+                              2032
+                            </div>
+                            <div className="text-xs font-medium text-muted-foreground">
+                              Support Until
                             </div>
                           </div>
                         </div>
 
-                        {/* Key Features */}
-                        <div>
-                          <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <CheckCircle className="h-4 w-4 text-secondary" />
-                            Key Features & Benefits
-                          </h3>
-                          <div className="grid gap-2">
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                        {/* Two Column Layout for Specs and Features */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+                          {/* Technical Specifications */}
+                          <div>
+                            <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
+                              <Settings className="h-4 w-4 text-secondary" />
+                              Technical Specifications
+                            </h3>
+                            <div className="flex flex-col gap-2">
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Brain className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      AI Processing Power
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      Hailo-8L Neural Accelerator
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      13 trillion operations per second (TOPS)
+                                      for real-time AI inference
+                                    </p>
+                                  </div>
                                 </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Superior thermal management for continuous
-                                    24/7 operation
-                                  </span>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Cpu className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Industrial Compute Module
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      Raspberry Pi 5 Industrial CM5, 8GB RAM
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      Quad-core 2.4GHz • 64-bit ARM • Expandable
+                                      SSD support
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Thermometer className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Advanced Thermal Management
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      Fanless aluminum enclosure
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      Self-dissipating heat management •
+                                      Maintains 10°C below maximum temperature
+                                      at full load
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-start gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <Camera className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex flex-col justify-between h-full min-h-0">
+                                    <h4 className="text-xs sm:text-sm font-bold leading-tight">
+                                      Camera & Connectivity
+                                    </h4>
+                                    <p className="text-xs text-muted-foreground leading-tight">
+                                      CSI2-MIPI/USB 3.1 interfaces
+                                    </p>
+                                    <p className="hidden xs:block text-[10px] xs:text-xs text-muted-foreground leading-tight">
+                                      CSI2 to HDMI converter • WiFi 802.11ac •
+                                      Gigabit Ethernet
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Multiple connectivity options: USB, Wi-Fi,
-                                    and Ethernet
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
-                                </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Ubuntu-based with OpenCV, TensorFlow, and
-                                    ONNX framework support
-                                  </span>
+                          </div>
+
+                          {/* Key Features */}
+                          <div>
+                            <h3 className="text-sm sm:text-base font-bold mb-2 sm:mb-3 flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-secondary" />
+                              Key Features & Benefits
+                            </h3>
+                            <div className="grid gap-2">
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Superior thermal management for continuous
+                                      24/7 operation
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
-                              <div className="flex items-center gap-2 sm:gap-3 h-full">
-                                <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
-                                  <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Multiple connectivity options: USB, Wi-Fi,
+                                      and Ethernet
+                                    </span>
+                                  </div>
                                 </div>
-                                <div className="flex items-center h-full min-h-0">
-                                  <span className="text-xs sm:text-sm font-bold leading-tight">
-                                    Long-term support with parts availability
-                                    guaranteed until 2032
-                                  </span>
+                              </div>
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Ubuntu-based with OpenCV, TensorFlow, and
+                                      ONNX framework support
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="bg-card border border-border/30 rounded-lg p-2 sm:p-3 h-[60px] sm:h-[72px]">
+                                <div className="flex items-center gap-2 sm:gap-3 h-full">
+                                  <div className="w-6 h-6 sm:w-7 sm:h-7 bg-secondary/20 rounded flex items-center justify-center flex-shrink-0">
+                                    <CheckCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-secondary" />
+                                  </div>
+                                  <div className="flex items-center h-full min-h-0">
+                                    <span className="text-xs sm:text-sm font-bold leading-tight">
+                                      Long-term support with parts availability
+                                      guaranteed until 2032
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </div>
+                    </DialogContent>
+                  </Dialog>
+                </div>
               </div>
             </div>
           </div>
@@ -765,7 +769,9 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-1.5 sm:gap-2">
                     <CheckCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-secondary flex-shrink-0 mt-0.5" />
-                    <span>Proven in automotive, pharma, aerospace & medical</span>
+                    <span>
+                      Proven in automotive, pharma, aerospace & medical
+                    </span>
                   </li>
                   <li className="flex items-start gap-1.5 sm:gap-2">
                     <CheckCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-secondary flex-shrink-0 mt-0.5" />
@@ -880,7 +886,9 @@ export default function Home() {
                     <span className="text-xs sm:text-sm font-medium text-foreground">
                       Throughput Increase
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-secondary">3×</span>
+                    <span className="text-xs sm:text-sm font-bold text-secondary">
+                      3×
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -1089,7 +1097,10 @@ export default function Home() {
           <div className="text-center mt-6 sm:mt-8 md:mt-10 px-2">
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
               Real-world results are just the beginning.{" "}
-              <Button variant="link" className="p-0 h-auto inline-flex items-center gap-1 text-sm sm:text-base md:text-lg font-medium">
+              <Button
+                variant="link"
+                className="p-0 h-auto inline-flex items-center gap-1 text-sm sm:text-base md:text-lg font-medium"
+              >
                 Explore more stories
                 <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
@@ -1105,9 +1116,9 @@ export default function Home() {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold px-2">
               Why Choose Perspectiv
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-3 sm:px-4">
-              Advanced AI vision technology designed specifically for industrial
-              manufacturing
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-3 sm:px-4">
+              Chosen by leading manufacturers as the go-to AI vision solution
+              for industrial quality
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
@@ -1119,19 +1130,23 @@ export default function Home() {
                 Proven in the Field
               </h3>
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
-                Deployed across automotive, pharma, aerospace, garments, and more — delivering results from day one.
+                Deployed and delivering results in leading automotive, pharma,
+                aerospace, and garment factories — backed by real-world case
+                studies
               </p>
             </div>
 
             <div className="text-center space-y-1.5 sm:space-y-2 p-3 sm:p-4">
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto">
-                <Zap className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
+                <CircleGauge className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
               </div>
-              <h3 className="text-xs sm:text-sm font-bold">
-                Measurable ROI
-              </h3>
+              <h3 className="text-xs sm:text-sm font-bold">Measurable ROI</h3>
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
-                Reduce inspection times by up to 20× and achieve accuracy as high as 99%.
+                Cut inspection times by up to{" "}
+                <span className="font-semibold text-white/80">20x</span> and
+                achieve up to{" "}
+                <span className="font-semibold text-white/80">99%</span>{" "}
+                accuracy — proven in live production lines, not just lab tests
               </p>
             </div>
 
@@ -1139,35 +1154,38 @@ export default function Home() {
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto">
                 <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
               </div>
-              <h3 className="text-xs sm:text-sm font-bold">
-                Future-Ready
-              </h3>
+              <h3 className="text-xs sm:text-sm font-bold">Future-Ready</h3>
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
-                Rugged, industrial-grade hardware with guaranteed parts availability till 2032.
+                Rugged, industrial-grade hardware with guaranteed parts
+                availability till 2032 — ensuring your investment stays
+                operational for the long haul
               </p>
             </div>
 
             <div className="text-center space-y-1.5 sm:space-y-2 p-3 sm:p-4">
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto">
-                <Factory className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
+                <Network className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
               </div>
               <h3 className="text-xs sm:text-sm font-bold">
                 Complete AI Vision Platform
               </h3>
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
-                Integrated hardware, AI software, and expert consulting in one package.
+                From hardware to AI software to expert consulting — everything
+                you need to deploy and scale AI vision without juggling multiple
+                vendors
               </p>
             </div>
 
             <div className="text-center space-y-1.5 sm:space-y-2 p-3 sm:p-4">
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto">
-                <PackageCheck className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
+                <HandCoins className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
               </div>
               <h3 className="text-xs sm:text-sm font-bold">
                 Cost-Effective Excellence
               </h3>
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
-                Advanced AI vision capabilities with a lower total cost of ownership than traditional inspection systems.
+                Lower total cost of ownership than traditional inspection
+                systems — without compromising performance, speed or reliability
               </p>
             </div>
           </div>
@@ -1179,11 +1197,11 @@ export default function Home() {
         <div className="container mx-auto px-3 sm:px-4 text-center space-y-4 sm:space-y-5 md:space-y-6">
           <div className="space-y-2 sm:space-y-3 md:space-y-4">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight px-2">
-              Ready to eliminate quality bottlenecks?
+              Cut Defects. Save Costs. Boost Throughput.
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-3 sm:px-4">
-              Join leading manufacturers who trust Perspectiv for zero-defect
-              production
+              From automotive to pharma, our AI vision systems deliver
+              measurable ROI on your factory floor.
             </p>
           </div>
           <div className="flex flex-col gap-3 justify-center max-w-xs sm:max-w-md mx-auto">
