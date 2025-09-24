@@ -39,9 +39,14 @@ CURRENT.md
 ORBITRON_FONTS.md
 misc.md
 perspectiv_landing_page.md
+SEO_LLM_OPTIMIZATION_PLAN.md
 output.html
 
 # Screenshots and temporary files
 screenshots/
 *.tmp
 *.temp
+
+Perspectiv.pdf
+
+CLAUDE.local.md

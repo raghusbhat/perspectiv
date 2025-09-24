@@ -32,9 +32,16 @@ import {
   PackageCheck,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEO } from "@/components/SEO";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <SEO 
+        title="AI Vision System for Industrial Inspection | Perspectiv Labs"
+        description="Deploy AI-powered quality inspection with real-time edge hardware and intelligent vision software. Zero-defect manufacturing for automotive, pharmaceutical, and aerospace industries."
+        keywords="AI vision, industrial inspection, edge AI hardware, quality control, manufacturing, computer vision, defect detection, zero defect manufacturing"
+        canonical="https://perspectiv.com/"
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 border-b border-border/40">
         {/* Background Pattern */}
