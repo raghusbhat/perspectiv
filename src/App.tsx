@@ -9,6 +9,9 @@ import Capabilities from "./routes/software/capabilities";
 import AITrainingDeployment from "./routes/software/ai-training-deployment";
 import DashboardAnalytics from "./routes/software/dashboard-analytics";
 import IntegrationAPIs from "./routes/software/integration-apis";
+import PrivacyPolicy from "./routes/privacy-policy";
+import TermsOfService from "./routes/terms-of-service";
+import CookiePolicy from "./routes/cookie-policy";
 import NotFound from "./routes/not-found";
 import { RootLayout } from "./layouts/root-layout";
 import { ErrorBoundary } from "./components/ErrorBoundary";
@@ -69,6 +72,22 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <NotFound />, // Placeholder until implemented
+      },
+      // Legal pages
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
+        errorElement: <ErrorBoundary />,
+      },
+      {
+        path: "terms-of-service",
+        element: <TermsOfService />,
+        errorElement: <ErrorBoundary />,
+      },
+      {
+        path: "cookie-policy",
+        element: <CookiePolicy />,
+        errorElement: <ErrorBoundary />,
       },
       // 404 catch-all route
       {
